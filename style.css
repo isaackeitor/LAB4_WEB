@@ -105,22 +105,54 @@ body {
     border-radius: 50%;
     align-self: center;
     clip-path: circle(60% at 49% 100%);
-
-    &::before, &::after{
-        position: absolute;
-        content: "";
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        border : 10px solid #000;
-        top: 102px;
-        left: -9px;
-        clip-path: circle(60% at 0 0);
-
-    }
 }
 
+.boca::before, .boca::after{
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border : 10px solid #000;
+    top: 102px;
+    left: -9px;
+    clip-path: circle(60% at 0 0);
+}
 
+.boca::after{
+    left: 140px;
+    right: 107px;
+    clip-path: circle(50% at 100% 0);
+}
 
+.cuerpo{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background: #3970c2;
+    top: 350px;
+    border: 10px solid #000;
+    border-radius: 24% 24% 10% 10% / 16% 17% 0% 0%;
+}
 
+.cuerpo::before, .cuerpo::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    top: 30;
+}
+
+.cuerpo::before{
+   border-right: 10px solid #000;
+   position: relative;
+   left: 75px;
+   top : 32px;
+}
+
+.cuerpo::after{
+    border-left: 10px solid #000;
+    position: relative;
+    top : 32px;
+}
 
