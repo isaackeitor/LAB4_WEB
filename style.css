@@ -1,0 +1,126 @@
+body {
+    background: #5CA2C6;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.head{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border : 10px solid #000;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+}
+
+.head::before{
+    content : "";
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: inset -22px 5px 0 7px rgba(0,0,0,0.2);
+}
+
+.head::after{
+    position: absolute;
+    content : "";
+    width: 15px;
+    height: 30px;
+    background: #fff;
+    margin-top: 300px;
+    border: 10px solid #000;
+}
+
+.ojol, .ojod{
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ojol{
+    margin-left: -180px;
+}
+
+.ojod{
+    margin-left: 180px;
+}
+
+.ojol::before, .ojod::before{
+    content : "";
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: inset -22px 5px 0 3px rgba(255,255,255,0.17);
+}
+
+.ojol::after, .ojod::after{
+    content : "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    background: #fff;
+}
+
+.ojod::after{
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 5px solid #fff;
+}
+
+.separador{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    align-self: flex-end;
+    margin-bottom: -50px;
+}
+
+.boca{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    border: 10px solid #000;
+    border-radius: 50%;
+    align-self: center;
+    clip-path: circle(60% at 49% 100%);
+
+    &::before, &::after{
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border : 10px solid #000;
+        top: 102px;
+        left: -9px;
+        clip-path: circle(60% at 0 0);
+
+    }
+}
+
+
+
+
+
