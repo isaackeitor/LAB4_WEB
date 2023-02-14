@@ -1,0 +1,23 @@
+body{
+    background-color: #222222;
+}
+
+.moon{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    background-color: #CCCCCC;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 100% 100% 100% 100% / 100% 100% 100% 100% ;
+    box-shadow: inset -35px -45px 0 0 #B7B7B7;
+}
+
+
+
+
+
