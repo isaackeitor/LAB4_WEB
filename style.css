@@ -1,3 +1,9 @@
+*::before, *::after{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
 body{
     background-color: #222222;
 }
@@ -7,8 +13,15 @@ body{
     align-items: center;
     height: 300px;
     width: 300px;
+    background: 
+    radial-gradient(circle at 35% 15%, #AAAAAA 5%, #FFFFFF 0%, #CCCCCC 0%, #CCCCCC 0%) 64% 7%/10em 10em, 
+    radial-gradient(circle at 30% 25%, #AAAAAA 5%, #FFFFFF 0%, #CCCCCC 0%, #CCCCCC 0%) 22% 24%/7em 7em,
+    radial-gradient(circle at 35% 55%, #AAAAAA 5%, #FFFFFF 0%, #CCCCCC 0%, #CCCCCC 0%) 14% 57%/10em 10em,
+    radial-gradient(circle at 90% 60%, #AAAAAA 5%, #FFFFFF 0%, #CCCCCC 0%, #CCCCCC 0%) 32% 65%/10em 10em,
+    radial-gradient(circle at 90% 70%, #AAAAAA 5%, #FFFFFF 0%, #CCCCCC 0%, #CCCCCC 0%) 54% 54%/10em 10em;
+    background-repeat: no-repeat;
     background-color: #CCCCCC;
-    margin: auto;
+    margin: calc(50vh - 150px) calc(50vw - 150px);
     right: 0;
     left: 0;
     top: 0;
@@ -17,7 +30,26 @@ body{
     box-shadow: inset -35px -45px 0 0 #B7B7B7;
 }
 
+.moon::before{
+    width: 70px;
+    height: 70px;
+    left: 50%;
+    margin-left: -100px;
+    background-color: #FFFFFF;
+    border-radius: 100% 100% 100% 100% / 100% 100% 100% 100% ;
+    content: "";
+}
 
+ .moon::after{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 50%;
+    margin-right: 100px;
+    background-color: #FFFFFF;
+    border-radius: 100% 100% 100% 100% / 100% 100% 100% 100% ;
+    content: "";
+}
 
 
 
