@@ -33,23 +33,12 @@ body{
 .moon::before{
     width: 70px;
     height: 70px;
-    left: 50%;
+    left: 80%;
     margin-left: -100px;
     background-color: #FFFFFF;
     border-color: aqua;
     border-radius: 100% 100% 100% 100% / 100% 100% 100% 100%;
     content: "";
-    -webkit-animation: circle 5s linear infinite;
-    animation: circle 5s linear infinite;
+    animation: circle 0.5s ease-in-out infinite;
 
-}
-
-
-@-webkit-keyframes cirlce {
-    0% {
-        transform: rotate(0deg)translate(-160px)rotate(0deg);
-    }
-    100% {
-        transform: rotate(360)translate(-165px)rotate(-360deg);
-    }
 }
